@@ -1,0 +1,29 @@
+{
+  "name": "camel-kb-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local MCP knowledge base for Apache Camel components, EIPs, and core concepts",
+  "scripts": {
+    "ingest": "tsx scripts/ingest.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "query": "tsx scripts/query.ts",
+    "doctor": "tsx scripts/doctor.ts",
+    "test:mcp": "tsx scripts/test-mcp.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "adm-zip": "^0.5.16",
+    "better-sqlite3": "^13.0.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
